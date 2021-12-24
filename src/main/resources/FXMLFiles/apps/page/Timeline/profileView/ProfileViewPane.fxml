@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="856.0" style="-fx-background-color: #393b45;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apps.page.timeline.profileView.view.ProfileViewFXMLController">
+   <children>
+      <Pane layoutX="15.0" layoutY="178.0" prefHeight="262.0" prefWidth="826.0" style="-fx-background-color: #2e3038;">
+         <children>
+            <Pane layoutY="233.0" prefHeight="30.0" prefWidth="826.0" style="-fx-background-color: #22242a;">
+               <children>
+                  <Button fx:id="backButton" layoutY="2.0" mnemonicParsing="false" onAction="#backPage" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: #22242a;" text="Back" textFill="#676b7e" />
+                  <Button fx:id="nextButton" layoutX="773.0" layoutY="2.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="17.0" prefWidth="52.0" style="-fx-background-color: #22242a;" text="Next" textFill="#676b7e" />
+               </children>
+            </Pane>
+            <Line endX="686.4000244140625" layoutX="126.0" layoutY="78.0" startX="-113.00000762939453" stroke="#22242a" />
+            <Line endX="686.4000244140625" layoutX="126.0" layoutY="154.0" startX="-113.00000762939453" stroke="#22242a" />
+            <Pane fx:id="tweet1Pane" layoutX="14.0" layoutY="4.0" prefHeight="72.0" prefWidth="800.0" style="-fx-background-color: #2e3038;" />
+            <Pane fx:id="tweet2Pane" layoutX="14.0" layoutY="80.0" prefHeight="72.0" prefWidth="800.0" style="-fx-background-color: #2e3038;" />
+            <Pane fx:id="tweet3Pane" layoutX="14.0" layoutY="156.0" prefHeight="72.0" prefWidth="800.0" style="-fx-background-color: #2e3038;" />
+         </children>
+      </Pane>
+      <ImageView fx:id="profileImageView" fitHeight="110.0" fitWidth="110.0" layoutX="24.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nameLabel" layoutX="140.0" layoutY="34.0" text="name &amp; lastname" textFill="#b9bbc6">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLabel" layoutX="139.0" layoutY="64.0" text="\@username" textFill="#676b7e" />
+      <Label fx:id="bioLabel" layoutX="139.0" layoutY="103.0" text="bio" textFill="#9da0af">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="informationLabel" layoutX="139.0" layoutY="126.0" text="email address . phone number . date of birth" textFill="#676b7e">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="statusButton" layoutX="24.0" layoutY="144.0" mnemonicParsing="false" onAction="#changeStatus" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #393b45;" text="Follow" textAlignment="CENTER" textFill="#006bb3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="blockButton" layoutX="771.0" layoutY="37.0" mnemonicParsing="false" onAction="#block" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #393b45;" text="Block" textFill="#006bb3" />
+      <Button fx:id="muteButton" layoutX="708.0" layoutY="37.0" mnemonicParsing="false" onAction="#mute" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #393b45;" text="Mute" textFill="#006bb3" />
+      <Button layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#prevStep" prefHeight="31.0" prefWidth="37.0" style="-fx-background-color: #393b45;" text="&lt;" textFill="#006bb3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="lastSeenLabel" layoutX="140.0" layoutY="81.0" text="Last seen recently" textFill="#676b7e" />
+   </children>
+</Pane>
